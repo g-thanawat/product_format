@@ -1,24 +1,9 @@
 package pd_format
 
-import "testing"
+import (
+	"testing"
+)
 
-func TestAdd(t *testing.T) {
-	r := Add(1, 2)
-
-	if r != 3 {
-		t.Error("Add(1,2) shouldbe 3")
-	}
+func TestClean_and_split(t *testing.T) {
+	Clean_and_split("--FG0A-CLEAR-OPPOA3*2/FG0A-MATTE-OPPOA3*2")
 }
-
-func Testsplit(t *testing.T) {
-	s := split("Welcome,to,GeeksforGeeks")
-
-}
-
-// func Testaa(t *testing.T) {
-// 	r := Add(1, 2)
-
-// 	if r != 3 {
-// 		t.Error("Add(1,2) shouldbe 3")
-// 	}
-// }
